@@ -3,11 +3,13 @@ package AutomationPractice.SwagLabsAutomationPractice;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 public class TestScript extends Baseclass
 {
+@Parameters({"firstName","lastName","zipCode"})
 @Test
 public void test() throws EncryptedDocumentException, IOException
 {
@@ -17,7 +19,8 @@ public void test() throws EncryptedDocumentException, IOException
 	YourCartpage y1=new YourCartpage();
 	y1.clickoncheckOutbutton();
 	CheckoutYourInformationpage cyip=new CheckoutYourInformationpage();
-	cyip.enterPersonalDetails("Sardar", "Sardar", "12345");
+	cyip.enterPersonalDetails("firstName","lastName","zipCode");
+	//cyip.enterPersonalDetails("Sardar", "Sardar", "12345");
 	CheckoutOverviewpage cop=new CheckoutOverviewpage();
 	cop.clickonFinishbutton();
 	CheckoutCompletepage ccp=new CheckoutCompletepage();
