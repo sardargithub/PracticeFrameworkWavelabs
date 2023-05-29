@@ -5,6 +5,8 @@
     <classes>
       <class name="AutomationPractice.SwagLabsAutomationPractice.TestScript">
         <methods>
+          <include name="OpenBrowser"/>
+          <include name="Login"/>
           <include name="test"/>
         </methods>
       </class> <!-- AutomationPractice.SwagLabsAutomationPractice.TestScript -->

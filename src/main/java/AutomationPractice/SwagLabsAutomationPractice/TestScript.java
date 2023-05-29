@@ -1,12 +1,15 @@
 package AutomationPractice.SwagLabsAutomationPractice;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.Test;
 
 
 public class TestScript extends Baseclass
 {
 @Test
-public void test()
+public void test() throws EncryptedDocumentException, IOException
 {
 	AddProductpage a1=new AddProductpage();
 	a1.addproductlink();
@@ -18,7 +21,7 @@ public void test()
 	CheckoutOverviewpage cop=new CheckoutOverviewpage();
 	cop.clickonFinishbutton();
 	CheckoutCompletepage ccp=new CheckoutCompletepage();
-	ccp.verifyConfirmationMessage();
+	ccp.retriveSuccessmessage();
 }
 
 }
