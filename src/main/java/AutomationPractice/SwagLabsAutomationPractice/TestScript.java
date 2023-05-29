@@ -3,6 +3,7 @@ package AutomationPractice.SwagLabsAutomationPractice;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -25,6 +26,7 @@ public void test() throws EncryptedDocumentException, IOException
 	cop.clickonFinishbutton();
 	CheckoutCompletepage ccp=new CheckoutCompletepage();
 	ccp.retriveSuccessmessage();
+	Assert.assertTrue(false);
 }
 
 }
