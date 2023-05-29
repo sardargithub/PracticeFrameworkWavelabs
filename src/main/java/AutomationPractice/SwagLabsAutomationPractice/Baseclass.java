@@ -10,8 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
@@ -54,6 +52,7 @@ public void Login() throws EncryptedDocumentException, IOException
 	driver.findElement(By.xpath("//*[@id='user-name']")).sendKeys(un);
 	driver.findElement(By.xpath("//*[@id='password']")).sendKeys(pwd);
 	driver.findElement(By.xpath("//*[@id='login-button']")).click();
+	System.out.println("Testing");
 }
 /*
  * @AfterClass public void logout() {
