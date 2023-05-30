@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationPractice.SwagLabsAutomationPractice.TestScript">
+      <class name="resources.TestScript">
         <methods>
+          <include name="test"/>
           <include name="OpenBrowser"/>
           <include name="Login"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- AutomationPractice.SwagLabsAutomationPractice.TestScript -->
+      </class> <!-- resources.TestScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

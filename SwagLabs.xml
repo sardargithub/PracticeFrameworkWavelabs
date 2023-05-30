@@ -9,7 +9,7 @@
   <parameter name="lastName" value="sardar"/>
   <parameter name="zipCode" value="1234"/>
     <classes>
-      <class name="AutomationPractice.SwagLabsAutomationPractice.TestScript"/>
+      <class name="resources.TestScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import resources.Baseclass;
+import resources.Exceloperation;
+
 public class CheckoutCompletepage 
 {
 	@FindBy(xpath = "//*[@class='complete-header']")
