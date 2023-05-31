@@ -21,6 +21,7 @@ public static WebDriver driver;
 @BeforeTest
 public void OpenBrowser() throws EncryptedDocumentException, IOException
 {
+	//String Browser=System.getProperty("browser")!=null? System.getProperty("browser"):Exceloperation.readdata("Sheet1", 1, 0);
 	String Browser=Exceloperation.readdata("Sheet1", 1, 0);
 	String Url=Exceloperation.readdata("Sheet1", 1, 1);
 	if(Browser.equals("Chrome"))
