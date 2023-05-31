@@ -55,11 +55,17 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
+<<<<<<< HEAD
+<td>Started on:</td><td>Wed May 31 10:30:57 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (180 ms)</td>
+=======
 <td>Started on:</td><td>Wed May 31 10:38:43 IST 2023</td>
 </tr>
 <tr><td>Total time:</td><td>26 seconds (26709 ms)</td>
+>>>>>>> 67b4ef5fc685fd34f637dd3c9d246229d330cac4
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,39 +74,76 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='resources.TestScript.test()'><b>test</b><br>Test class: resources.TestScript</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at resources.TestScript.test(TestScript.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411721666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace411721666'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at resources.TestScript.test(TestScript.java:35)
+<td title='resources.TestScript.OpenBrowser()'><b>OpenBrowser</b><br>Test class: resources.TestScript</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos;
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:252)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:53)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:192)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
+	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
+	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
+	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
+	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:86)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:233)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:206)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:131)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:118)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:148)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:45)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at org.apache.poi.util.IOUtils.&lt;clinit&gt;(IOUtils.java:43)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at resources.Exceloperation.readdata(Exceloperation.java:18)
+	at resources.Baseclass.OpenBrowser(Baseclass.java:24)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2114289475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2114289475'><pre>java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos;
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:252)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:53)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:192)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
+	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
+	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
+	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
+	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:86)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:233)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:206)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:131)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:118)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:148)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:45)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at org.apache.poi.util.IOUtils.&lt;clinit&gt;(IOUtils.java:43)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at resources.Exceloperation.readdata(Exceloperation.java:18)
+	at resources.Baseclass.OpenBrowser(Baseclass.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
@@ -116,7 +159,125 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
+<td>resources.TestScript@41a0aa7d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='resources.TestScript.Login()'><b>Login</b><br>Test class: resources.TestScript</td>
+<td></td>
+<td>-1685509258</td>
+<td>resources.TestScript@41a0aa7d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='resources.TestScript.test()'><b>test</b><br>Test class: resources.TestScript</td>
+<<<<<<< HEAD
+<td><div><pre>java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos;
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:252)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:53)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:192)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
+	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
+	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
+	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
+	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:86)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:233)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:206)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:131)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:118)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:148)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:45)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at org.apache.poi.util.IOUtils.&lt;clinit&gt;(IOUtils.java:43)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at resources.Exceloperation.readdata(Exceloperation.java:18)
+	at resources.Baseclass.OpenBrowser(Baseclass.java:24)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620948294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620948294'><pre>java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos;
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:252)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:53)
+	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:192)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
+	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
+	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
+	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
+	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
+	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
+	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:86)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:233)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:206)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:131)
+	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:118)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:148)
+	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:45)
+	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
+	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
+	at org.apache.poi.util.IOUtils.&lt;clinit&gt;(IOUtils.java:43)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at resources.Exceloperation.readdata(Exceloperation.java:18)
+	at resources.Baseclass.OpenBrowser(Baseclass.java:24)
+=======
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at resources.TestScript.test(TestScript.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411721666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411721666'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at resources.TestScript.test(TestScript.java:35)
+>>>>>>> 67b4ef5fc685fd34f637dd3c9d246229d330cac4
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<<<<<<< HEAD
+<td>resources.TestScript@41a0aa7d</td></tr>
+=======
 <td>resources.TestScript@6253c26</td></tr>
+>>>>>>> 67b4ef5fc685fd34f637dd3c9d246229d330cac4
 </table><p>
 </body>
 </html>

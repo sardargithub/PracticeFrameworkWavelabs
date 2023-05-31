@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-31T10:38:43 IST" name="Suite" finished-at="2023-05-31T10:39:09 IST" duration-ms="26709">
+  <suite started-at="2023-05-31T15:25:05 IST" name="Default suite" finished-at="2023-05-31T15:25:29 IST" duration-ms="24371">
     <groups>
     </groups>
-    <test started-at="2023-05-31T10:38:43 IST" name="Test" finished-at="2023-05-31T10:39:09 IST" duration-ms="26709">
+    <test started-at="2023-05-31T15:25:05 IST" name="Default test" finished-at="2023-05-31T15:25:29 IST" duration-ms="24371">
       <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@6253c26]" started-at="2023-05-31T10:38:43 IST" name="OpenBrowser" finished-at="2023-05-31T10:39:08 IST" duration-ms="25531" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@82de64a]" started-at="2023-05-31T15:25:05 IST" name="OpenBrowser" finished-at="2023-05-31T15:25:28 IST" duration-ms="23241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@6253c26]" started-at="2023-05-31T10:39:08 IST" name="Login" finished-at="2023-05-31T10:39:09 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@82de64a]" started-at="2023-05-31T15:25:28 IST" name="Login" finished-at="2023-05-31T15:25:29 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@6253c26]" started-at="2023-05-31T10:39:09 IST" name="test" finished-at="2023-05-31T10:39:09 IST" duration-ms="829" status="FAIL">
+        <test-method signature="test()[pri:0, instance:resources.TestScript@82de64a]" started-at="2023-05-31T15:25:29 IST" name="test" finished-at="2023-05-31T15:25:29 IST" duration-ms="764" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -26,7 +26,7 @@ at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
 at org.testng.Assert.assertTrue(Assert.java:55)
-at resources.TestScript.test(TestScript.java:35)
+at resources.TestScript.test(TestScript.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,6 +62,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- test -->
       </class> <!-- resources.TestScript -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
