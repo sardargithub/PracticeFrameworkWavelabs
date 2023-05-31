@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="resources.ListenersTest"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="firstName" value="sardar"/>
+    <parameter name="lastName" value="sardar"/>
+    <parameter name="zipCode" value="1234"/>
+    <classes>
+      <class name="resources.TestScript">
+        <methods>
+          <include name="test"/>
+          <include name="Login"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- resources.TestScript -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

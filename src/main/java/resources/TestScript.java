@@ -32,7 +32,7 @@ public void test() throws EncryptedDocumentException, IOException
 	cop.clickonFinishbutton();
 	CheckoutCompletepage ccp=new CheckoutCompletepage();
 	ccp.retriveSuccessmessage();
-	Assert.assertTrue(false);
+	//Assert.assertTrue(false);
 }
 
 }
