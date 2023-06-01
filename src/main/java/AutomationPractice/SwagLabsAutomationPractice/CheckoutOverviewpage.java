@@ -23,6 +23,9 @@ public class CheckoutOverviewpage
 	@FindBy(xpath="//*[contains(@class,'summary_info_label ')]")
 	WebElement totalPrice;
 	
+	@FindBy(xpath="//*[contains(@class,'summary_tax_label')]")
+	WebElement taxAmount;
+	
 	public CheckoutOverviewpage()
 	{
 		PageFactory.initElements(Baseclass.driver,this);
@@ -50,5 +53,10 @@ public class CheckoutOverviewpage
 	public String getTotalPrice() {
 		String price=totalPrice.getText();
 		return price;
+	}
+	
+	public String getTaxAmount() {
+		String amount=taxAmount.getText();
+		return amount;
 	}
 }
