@@ -9,13 +9,11 @@
     <parameter name="lastName" value="sardar"/>
     <parameter name="zipCode" value="1234"/>
     <classes>
-      <class name="resources.TestScript">
+      <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
         <methods>
-          <include name="test"/>
-          <include name="OpenBrowser"/>
-          <include name="Login"/>
+          <include name="retriveSuccessmessage"/>
         </methods>
-      </class> <!-- resources.TestScript -->
+      </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

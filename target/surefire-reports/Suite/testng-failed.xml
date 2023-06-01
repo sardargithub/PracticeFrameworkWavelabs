@@ -14,13 +14,6 @@
           <include name="retriveSuccessmessage"/>
         </methods>
       </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage -->
-      <class name="resources.TestScript">
-        <methods>
-          <include name="test"/>
-          <include name="Login"/>
-          <include name="OpenBrowser"/>
-        </methods>
-      </class> <!-- resources.TestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
