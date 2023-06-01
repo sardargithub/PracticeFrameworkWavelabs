@@ -9,6 +9,7 @@
       <class name="resources.TestScript">
         <methods>
           <include name="test"/>
+          <include name="closeBrowser"/>
           <include name="OpenBrowser"/>
           <include name="Login"/>
         </methods>
