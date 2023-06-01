@@ -1,5 +1,7 @@
 package AutomationPractice.SwagLabsAutomationPractice;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,16 +15,24 @@ WebElement productsLink;
 @FindBy(xpath="//a[@class='shopping_cart_link']")
 WebElement cartproduct;
 
-public AddProductpage()
-{
-	PageFactory.initElements(Baseclass.driver,this);
+@FindBy(xpath="//*[@class='inventory_list']/div")
+List<WebElement> cartProducts;
+
+public AddProductpage() {
+	PageFactory.initElements(Baseclass.driver, this);
 }
-public void addproductlink()
-{
+
+public void addproductlink() {
 	productsLink.click();
 }
-public void addcartproduct()
-{
+
+public void addcartproduct() {
 	cartproduct.click();
 }
+
+public int getListOfProducts() {
+	System.out.println(cartProducts.size());
+	return cartProducts.size();
+}
+
 }
