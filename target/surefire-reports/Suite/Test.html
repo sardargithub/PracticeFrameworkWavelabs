@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 01 12:21:35 IST 2023</td>
+<td>Started on:</td><td>Thu Jun 01 16:36:13 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26496 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47206 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,13 +79,13 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
 	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:33)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace441652258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace441652258'><pre>java.lang.NullPointerException
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798695894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798695894'><pre>java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
 	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -118,18 +118,22 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@5b057c8c</td></tr>
+<td>AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@7894f09b</td></tr>
 <tr>
 <td title='resources.TestScript.test()'><b>test</b><br>Test class: resources.TestScript</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at resources.TestScript.test(TestScript.java:35)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1144838820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1144838820'><pre>java.lang.AssertionError: expected [true] but found [false]
+<td><div><pre>java.lang.AssertionError: expected [Thank you for your order!] but found [Thank you for your]
+	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:38)
+	at resources.TestScript.test(TestScript.java:45)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318550723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318550723'><pre>java.lang.AssertionError: expected [Thank you for your order!] but found [Thank you for your]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at resources.TestScript.test(TestScript.java:35)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:38)
+	at resources.TestScript.test(TestScript.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +164,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>1</td>
-<td>resources.TestScript@619bfe29</td></tr>
+<td>20</td>
+<td>resources.TestScript@1dd0e7c4</td></tr>
 </table><p>
 </body>
 </html>

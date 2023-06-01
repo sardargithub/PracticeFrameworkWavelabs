@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-01T06:51:35Z" name="Suite" finished-at="2023-06-01T06:52:02Z" duration-ms="26496">
+  <suite started-at="2023-06-01T11:06:13Z" name="Suite" finished-at="2023-06-01T11:07:00Z" duration-ms="47206">
     <groups>
     </groups>
-    <test started-at="2023-06-01T06:51:35Z" name="Test" finished-at="2023-06-01T06:52:02Z" duration-ms="26496">
+    <test started-at="2023-06-01T11:06:13Z" name="Test" finished-at="2023-06-01T11:07:00Z" duration-ms="47206">
       <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
-        <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@5b057c8c]" started-at="2023-06-01T12:22:01Z" name="retriveSuccessmessage" finished-at="2023-06-01T12:22:01Z" duration-ms="1" status="FAIL">
+        <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@7894f09b]" started-at="2023-06-01T16:37:00Z" name="retriveSuccessmessage" finished-at="2023-06-01T16:37:00Z" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
 	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -52,26 +52,29 @@
         </test-method> <!-- retriveSuccessmessage -->
       </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage -->
       <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T12:21:35Z" name="OpenBrowser" finished-at="2023-06-01T12:21:59Z" duration-ms="24306" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@1dd0e7c4]" started-at="2023-06-01T16:36:13Z" name="OpenBrowser" finished-at="2023-06-01T16:36:39Z" duration-ms="25719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T12:21:59Z" name="Login" finished-at="2023-06-01T12:22:00Z" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@1dd0e7c4]" started-at="2023-06-01T16:36:39Z" name="Login" finished-at="2023-06-01T16:36:39Z" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T12:22:00Z" name="test" finished-at="2023-06-01T12:22:01Z" duration-ms="1177" status="FAIL">
+        <test-method signature="test()[pri:0, instance:resources.TestScript@1dd0e7c4]" started-at="2023-06-01T16:36:39Z" name="test" finished-at="2023-06-01T16:37:00Z" duration-ms="20963" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[expected [Thank you for your order!] but found [Thank you for your]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: expected [Thank you for your order!] but found [Thank you for your]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertTrue(Assert.java:41)
-	at org.testng.Assert.assertTrue(Assert.java:51)
-	at resources.TestScript.test(TestScript.java:35)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:38)
+	at resources.TestScript.test(TestScript.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,6 +110,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@1dd0e7c4]" started-at="2023-06-01T16:37:00Z" name="closeBrowser" finished-at="2023-06-01T16:37:00Z" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- resources.TestScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
