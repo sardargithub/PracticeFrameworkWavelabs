@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-31T07:04:56Z" name="Suite" finished-at="2023-05-31T07:05:22Z" duration-ms="25745">
+  <suite started-at="2023-05-31T13:52:51Z" name="Suite" finished-at="2023-05-31T13:53:17Z" duration-ms="26325">
     <groups>
     </groups>
-    <test started-at="2023-05-31T07:04:56Z" name="Test" finished-at="2023-05-31T07:05:22Z" duration-ms="25745">
+    <test started-at="2023-05-31T13:52:51Z" name="Test" finished-at="2023-05-31T13:53:17Z" duration-ms="26325">
       <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@59e32960]" started-at="2023-05-31T12:34:56Z" name="OpenBrowser" finished-at="2023-05-31T12:35:21Z" duration-ms="24474" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@68b6f0d6]" started-at="2023-05-31T19:22:51Z" name="OpenBrowser" finished-at="2023-05-31T19:23:16Z" duration-ms="25200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@59e32960]" started-at="2023-05-31T12:35:21Z" name="Login" finished-at="2023-05-31T12:35:21Z" duration-ms="340" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@68b6f0d6]" started-at="2023-05-31T19:23:16Z" name="Login" finished-at="2023-05-31T19:23:16Z" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@59e32960]" started-at="2023-05-31T12:35:21Z" name="test" finished-at="2023-05-31T12:35:22Z" duration-ms="916" status="PASS">
+        <test-method signature="test()[pri:0, instance:resources.TestScript@68b6f0d6]" started-at="2023-05-31T19:23:16Z" name="test" finished-at="2023-05-31T19:23:17Z" duration-ms="802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
