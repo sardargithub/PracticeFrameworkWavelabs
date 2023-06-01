@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
@@ -71,5 +72,10 @@ public String getScreenshot(String testCaseName) throws IOException {
 	File file = new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
 	FileUtils.copyFile(source,file);
 	return System.getProperty("user.dir")+"//reports//"+testCaseName+".png";
+}
+
+@AfterTest
+public void closeBrowser() {
+	driver.close();
 }
 }

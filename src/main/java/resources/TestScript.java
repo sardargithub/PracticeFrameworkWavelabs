@@ -2,6 +2,8 @@ package resources;
 
 import java.io.IOException;
 
+import javax.sound.midi.SysexMessage;
+
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
@@ -29,10 +31,18 @@ public void test() throws EncryptedDocumentException, IOException
 	cyip.enterPersonalDetails("firstName","lastName","zipCode");
 	//cyip.enterPersonalDetails("Sardar", "Sardar", "12345");
 	CheckoutOverviewpage cop=new CheckoutOverviewpage();
+	String paymentInfo=cop.getPaymentInformation();
+	System.out.println(paymentInfo);
+	String shippingInfo=cop.getShippingInformation();
+	System.out.println(shippingInfo);
+	String productPrice = cop.getTotalPrice();
+	System.out.println(productPrice);
+	String taxAmount=cop.getTaxAmount();
+	System.out.println(taxAmount);
 	cop.clickonFinishbutton();
 	CheckoutCompletepage ccp=new CheckoutCompletepage();
 	ccp.retriveSuccessmessage();
-    Assert.assertTrue(false);
+    //Assert.assertTrue(false);
 
 
 }
