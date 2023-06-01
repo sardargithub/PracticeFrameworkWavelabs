@@ -25,6 +25,7 @@ public void test() throws EncryptedDocumentException, IOException
 	AddProductpage a1=new AddProductpage();
 	a1.addproductlink();
 	a1.addcartproduct();
+	a1.getListOfProducts();
 	YourCartpage y1=new YourCartpage();
 	y1.clickoncheckOutbutton();
 	CheckoutYourInformationpage cyip=new CheckoutYourInformationpage();
