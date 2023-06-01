@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-01T06:51:35Z" name="Suite" finished-at="2023-06-01T06:52:02Z" duration-ms="26496">
+  <suite started-at="2023-06-01T07:42:14Z" name="Suite" finished-at="2023-06-01T07:42:41Z" duration-ms="27618">
     <groups>
     </groups>
-    <test started-at="2023-06-01T06:51:35Z" name="Test" finished-at="2023-06-01T06:52:02Z" duration-ms="26496">
+    <test started-at="2023-06-01T07:42:14Z" name="Test" finished-at="2023-06-01T07:42:41Z" duration-ms="27618">
       <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
-        <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@5b057c8c]" started-at="2023-06-01T12:22:01Z" name="retriveSuccessmessage" finished-at="2023-06-01T12:22:01Z" duration-ms="1" status="FAIL">
+        <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@5b057c8c]" started-at="2023-06-01T13:12:41Z" name="retriveSuccessmessage" finished-at="2023-06-01T13:12:41Z" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -52,15 +52,15 @@
         </test-method> <!-- retriveSuccessmessage -->
       </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage -->
       <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T12:21:35Z" name="OpenBrowser" finished-at="2023-06-01T12:21:59Z" duration-ms="24306" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T13:12:14Z" name="OpenBrowser" finished-at="2023-06-01T13:12:39Z" duration-ms="25625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T12:21:59Z" name="Login" finished-at="2023-06-01T12:22:00Z" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T13:12:39Z" name="Login" finished-at="2023-06-01T13:12:40Z" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T12:22:00Z" name="test" finished-at="2023-06-01T12:22:01Z" duration-ms="1177" status="FAIL">
+        <test-method signature="test()[pri:0, instance:resources.TestScript@619bfe29]" started-at="2023-06-01T13:12:40Z" name="test" finished-at="2023-06-01T13:12:41Z" duration-ms="1142" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
