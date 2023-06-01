@@ -35,7 +35,11 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
+<<<<<<< HEAD
 <a href="#"><span class="badge badge-primary">Jun 1, 2023 04:36:13 PM</span></a>
+=======
+<a href="#"><span class="badge badge-primary">Jun 1, 2023 04:32:55 PM</span></a>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 </li>
 </ul>
 </div>
@@ -71,6 +75,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -79,14 +84,58 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">test</p>
             <p class="text-sm">
+<<<<<<< HEAD
               <span>4:36:39 PM</span> / <span>00:00:21:037</span>
+=======
+              <span>4:32:59 PM</span> / <span>00:00:00:643</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">test</h5>
+<span class='badge badge-success'>06.01.2023 4:32:59 PM</span>
+<span class='badge badge-danger'>06.01.2023 4:32:59 PM</span>
+<span class='badge badge-default'>00:00:00:643</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:32:59 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">retriveSuccessmessage</p>
+            <p class="text-sm">
+              <span>4:32:59 PM</span> / <span>00:00:00:094</span>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -94,18 +143,31 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
+<<<<<<< HEAD
 <h5 class="test-status text-fail">test</h5>
 <span class='badge badge-success'>06.01.2023 4:36:39 PM</span>
 <span class='badge badge-danger'>06.01.2023 4:37:00 PM</span>
 <span class='badge badge-default'>00:00:21:037</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+=======
+<h5 class="test-status text-fail">retriveSuccessmessage</h5>
+<span class='badge badge-success'>06.01.2023 4:32:59 PM</span>
+<span class='badge badge-danger'>06.01.2023 4:32:59 PM</span>
+<span class='badge badge-default'>00:00:00:094</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
+<<<<<<< HEAD
 <img data-featherlight='C:\Users\chaitanyak\PracticeFrameworkWavelabs//reports//test.png' src="C:\Users\chaitanyak\PracticeFrameworkWavelabs//reports//test.png">
     <div class="title">test</div>
+=======
+<img data-featherlight='C:\Users\sardar\eclipse-workspace\PracticeFrameworkWavelabs//reports//retriveSuccessmessage.png' src="C:\Users\sardar\eclipse-workspace\PracticeFrameworkWavelabs//reports//retriveSuccessmessage.png">
+    <div class="title">retriveSuccessmessage</div>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
     </div></div>
 <div class="detail-body mt-4">
 <table class="table table-sm">
@@ -113,6 +175,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
+<<<<<<< HEAD
         <td>4:37:00 PM</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: expected [Thank you for your order!] but found [Thank you for your]
@@ -124,6 +187,15 @@
 	at org.testng.Assert.assertEquals(Assert.java:199)
 	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:38)
 	at resources.TestScript.test(TestScript.java:45)
+=======
+        <td>4:32:59 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:33)
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,6 +225,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+<<<<<<< HEAD
 </textarea>
           
         </td>
@@ -232,6 +305,8 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+=======
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 </textarea>
           
         </td>
@@ -263,12 +338,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">java.lang.NullPointerException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>java.lang.NullPointerException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -282,9 +357,13 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
+<<<<<<< HEAD
 <td>16:36:39 PM</td>
+=======
+<td>16:32:59 PM</td>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 <td>
-<a href="#" class="linked" test-id='1' id='1'>test</a>
+<a href="#" class="linked" test-id='2' id='2'>retriveSuccessmessage</a>
 </td>
 </tr>
 </tbody>
@@ -337,19 +416,27 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
+<<<<<<< HEAD
 <h3>Jun 1, 2023 04:36:13 PM</h3>
+=======
+<h3>Jun 1, 2023 04:32:55 PM</h3>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
+<<<<<<< HEAD
 <h3>Jun 1, 2023 04:37:00 PM</h3>
+=======
+<h3>Jun 1, 2023 04:32:59 PM</h3>
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -371,12 +458,16 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
+<<<<<<< HEAD
 <small data-tooltip='100%'><b>2</b> tests failed,
+=======
+<small data-tooltip='50%'><b>1</b> tests failed,
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -394,9 +485,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='50%'><b>1</b> events passed</small></div>
 <div>
+<<<<<<< HEAD
 <small data-tooltip='100%'><b>2</b> events failed,
+=======
+<small data-tooltip='50%'><b>1</b> events failed,
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -413,7 +508,11 @@
 </div></div>
 <script>
 var timeline = {
+<<<<<<< HEAD
 "test":21.037,"retriveSuccessmessage":0.074
+=======
+"test":0.643,"retriveSuccessmessage":0.094
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 };
 </script>
 <div class="row">
@@ -436,8 +535,13 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
+<<<<<<< HEAD
 passParent: 0,
 failParent: 2,
+=======
+passParent: 1,
+failParent: 1,
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -453,8 +557,13 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
+<<<<<<< HEAD
 passEvents: 0,
 failEvents: 2,
+=======
+passEvents: 1,
+failEvents: 1,
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

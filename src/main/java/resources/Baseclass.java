@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
@@ -33,6 +34,16 @@ public void OpenBrowser() throws EncryptedDocumentException, IOException
 	{
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications","headless","--window-size=1366,768");
+		options.addArguments("--allow-insecure-localhost");
+	    options.addArguments("--disable-gpu");
+	    options.addArguments("--no-sandbox");
+		/*
+		 * DesiredCapabilities caps = DesiredCapabilities.chrome();
+		 * 
+		 * caps.setCapability(ChromeOptions.CAPABILITY, options);
+		 * caps.setCapability("acceptInsecureCerts", caps);
+		 */
 		options.addArguments("--remote-allow-origins=*"); 
 		driver = new ChromeDriver(options);
 	}
@@ -49,6 +60,10 @@ public void OpenBrowser() throws EncryptedDocumentException, IOException
 	}
 	driver.get(Url);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+}
+private DesiredCapabilities DesiredCapabilities() {
+	// TODO Auto-generated method stub
+	return null;
 }
 @BeforeClass
 public void Login() throws EncryptedDocumentException, IOException
@@ -67,12 +82,13 @@ public void Login() throws EncryptedDocumentException, IOException
  * @AfterTest public void closebrowser() { driver.close(); }
  */
 public String getScreenshot(String testCaseName) throws IOException {
+	System.out.println("Taking ScreenShot here");
 	TakesScreenshot ts =(TakesScreenshot)driver;
 	File source=ts.getScreenshotAs(OutputType.FILE);
 	File file = new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
 	FileUtils.copyFile(source,file);
 	return System.getProperty("user.dir")+"//reports//"+testCaseName+".png";
-}
+	}
 
 @AfterTest
 public void closeBrowser() {

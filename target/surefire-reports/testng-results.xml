@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-06-01T11:06:13Z" name="Suite" finished-at="2023-06-01T11:07:00Z" duration-ms="47206">
     <groups>
     </groups>
     <test started-at="2023-06-01T11:06:13Z" name="Test" finished-at="2023-06-01T11:07:00Z" duration-ms="47206">
       <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
         <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@7894f09b]" started-at="2023-06-01T16:37:00Z" name="retriveSuccessmessage" finished-at="2023-06-01T16:37:00Z" duration-ms="0" status="FAIL">
+=======
+  <suite started-at="2023-06-01T11:02:56Z" name="Suite" finished-at="2023-06-01T11:02:59Z" duration-ms="3707">
+    <groups>
+    </groups>
+    <test started-at="2023-06-01T11:02:56Z" name="Test" finished-at="2023-06-01T11:02:59Z" duration-ms="3707">
+      <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
+        <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@24d4d7c9]" started-at="2023-06-01T16:32:59Z" name="retriveSuccessmessage" finished-at="2023-06-01T16:32:59Z" duration-ms="0" status="FAIL">
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -52,6 +61,7 @@
         </test-method> <!-- retriveSuccessmessage -->
       </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage -->
       <class name="resources.TestScript">
+<<<<<<< HEAD
         <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@1dd0e7c4]" started-at="2023-06-01T16:36:13Z" name="OpenBrowser" finished-at="2023-06-01T16:36:39Z" duration-ms="25719" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -111,6 +121,21 @@
           </reporter-output>
         </test-method> <!-- test -->
         <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@1dd0e7c4]" started-at="2023-06-01T16:37:00Z" name="closeBrowser" finished-at="2023-06-01T16:37:00Z" duration-ms="52" status="PASS">
+=======
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@53f48368]" started-at="2023-06-01T16:32:56Z" name="OpenBrowser" finished-at="2023-06-01T16:32:58Z" duration-ms="2651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@53f48368]" started-at="2023-06-01T16:32:58Z" name="Login" finished-at="2023-06-01T16:32:59Z" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="test()[pri:0, instance:resources.TestScript@53f48368]" started-at="2023-06-01T16:32:59Z" name="test" finished-at="2023-06-01T16:32:59Z" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@53f48368]" started-at="2023-06-01T16:32:59Z" name="closeBrowser" finished-at="2023-06-01T16:32:59Z" duration-ms="24" status="PASS">
+>>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
