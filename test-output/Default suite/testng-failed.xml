@@ -8,7 +8,7 @@
     <classes>
       <class name="resources.TestScript">
         <methods>
-          <include name="test"/>
+          <include name="getTaxAmount"/>
           <include name="closeBrowser"/>
           <include name="OpenBrowser"/>
           <include name="Login"/>

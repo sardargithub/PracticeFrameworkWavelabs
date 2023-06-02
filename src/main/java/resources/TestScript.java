@@ -38,8 +38,8 @@ public void test() throws EncryptedDocumentException, IOException
 	System.out.println(shippingInfo);
 	String productPrice = cop.getTotalPrice();
 	System.out.println(productPrice);
-	String taxAmount=cop.getTaxAmount();
-	System.out.println(taxAmount);
+	//String taxAmount=cop.getTaxAmount();
+	//System.out.println(taxAmount);
 	cop.clickonFinishbutton();
 	CheckoutCompletepage ccp=new CheckoutCompletepage();
 	ccp.retriveSuccessmessage();
