@@ -28,7 +28,7 @@ public class CheckoutCompletepage
 		backToHome.click();
 	}
 
-
+	@Test
 	public void retriveSuccessmessage() throws EncryptedDocumentException, IOException {
 		String conformationmesage = successMessage.getText();
 		System.out.println(conformationmesage);

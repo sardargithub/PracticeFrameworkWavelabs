@@ -1,5 +1,6 @@
 package AutomationPractice.SwagLabsAutomationPractice;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,6 +10,8 @@ import resources.Baseclass;
 
 public class CheckoutOverviewpage 
 {
+	public WebDriver driver;
+	
 	@FindBy(name="finish")
 	WebElement Finishbutton;
 	
@@ -56,8 +59,17 @@ public class CheckoutOverviewpage
 		String price=totalPrice.getText();
 		return price;
 	}
+	
+	@Test 
 	public String getTaxAmount() {
-		String amount=taxAmount.getText();
-		return amount;
+	String amount = taxAmount.getText();
+	System.out.println(amount);
+	return amount;
 	}
+	 
+	@Test
+	public void testMethod() {
+		System.out.println("This method created for testing");
+	}
+	
 }

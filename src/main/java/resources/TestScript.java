@@ -22,30 +22,28 @@ public class TestScript extends Baseclass
 @Test
 public void test() throws EncryptedDocumentException, IOException
 {
-	AddProductpage a1=new AddProductpage();
+	AddProductpage a1 = new AddProductpage();
 	a1.addproductlink();
 	a1.addcartproduct();
 	a1.getListOfProducts();
-	YourCartpage y1=new YourCartpage();
+	YourCartpage y1 = new YourCartpage();
 	y1.clickoncheckOutbutton();
-	CheckoutYourInformationpage cyip=new CheckoutYourInformationpage();
-	cyip.enterPersonalDetails("firstName","lastName","zipCode");
-	//cyip.enterPersonalDetails("Sardar", "Sardar", "12345");
-	CheckoutOverviewpage cop=new CheckoutOverviewpage();
-	String paymentInfo=cop.getPaymentInformation();
+	CheckoutYourInformationpage cyip = new CheckoutYourInformationpage();
+	cyip.enterPersonalDetails("firstName", "lastName", "zipCode");
+	// cyip.enterPersonalDetails("Sardar", "Sardar", "12345");
+	CheckoutOverviewpage cop = new CheckoutOverviewpage();
+	String paymentInfo = cop.getPaymentInformation();
 	System.out.println(paymentInfo);
-	String shippingInfo=cop.getShippingInformation();
+	String shippingInfo = cop.getShippingInformation();
 	System.out.println(shippingInfo);
 	String productPrice = cop.getTotalPrice();
 	System.out.println(productPrice);
-	//String taxAmount=cop.getTaxAmount();
+	//String taxAmount = cop.getTaxAmount();
 	//System.out.println(taxAmount);
 	cop.clickonFinishbutton();
-	CheckoutCompletepage ccp=new CheckoutCompletepage();
+	CheckoutCompletepage ccp = new CheckoutCompletepage();
 	ccp.retriveSuccessmessage();
-    //Assert.assertTrue(false);
-
-
+	// Assert.assertTrue(false);
 }
 
 }

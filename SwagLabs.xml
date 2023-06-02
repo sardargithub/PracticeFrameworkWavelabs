@@ -11,7 +11,20 @@
     <classes>
       <class name="resources.TestScript"/>
      <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage" >
-</class> 
+     	<methods>
+     		<exclude name="retriveSuccessmessage"/>
+     	</methods>
+	</class> 
+	<class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage" >
+     	<methods>
+     		<exclude name="testMethod"/>
+     	</methods>
+	</class> 
+	<class name="AutomationPractice.SwagLabsAutomationPractice.AddProductpage" >
+     	<methods>
+     		<include name="getListOfProducts"/>
+     	</methods>
+	</class> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

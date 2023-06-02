@@ -18,7 +18,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
+import AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Baseclass extends Exceloperation
@@ -74,7 +76,7 @@ public void Login() throws EncryptedDocumentException, IOException
 	driver.findElement(By.xpath("//*[@id='user-name']")).sendKeys(un);
 	driver.findElement(By.xpath("//*[@id='password']")).sendKeys(pwd);
 	driver.findElement(By.xpath("//*[@id='login-button']")).click();
-	System.out.println("Testing");
+	//System.out.println("Testing");
 }
 /*
  * @AfterClass public void logout() {
@@ -83,7 +85,7 @@ public void Login() throws EncryptedDocumentException, IOException
  * @AfterTest public void closebrowser() { driver.close(); }
  */
 public String getScreenshot(String testCaseName) throws IOException {
-	System.out.println("Taking ScreenShot here");
+	//System.out.println("Taking ScreenShot here");
 	TakesScreenshot ts =(TakesScreenshot)driver;
 	File source=ts.getScreenshotAs(OutputType.FILE);
 	File file = new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
@@ -97,4 +99,5 @@ public void closeBrowser() {
 	driver.close();
 	
 }
+
 }

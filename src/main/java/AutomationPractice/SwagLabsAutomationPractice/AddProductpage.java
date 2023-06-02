@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import resources.Baseclass;
 
@@ -30,8 +31,9 @@ public void addcartproduct() {
 	cartproduct.click();
 }
 
+@Test
 public int getListOfProducts() {
-	System.out.println(cartProducts.size());
+	//System.out.println(cartProducts.size());
 	return cartProducts.size();
 }
 

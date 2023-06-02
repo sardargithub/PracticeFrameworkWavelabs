@@ -11,7 +11,7 @@ public static ExtentReports getReportObject() {
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("Web Automation Results");
 		reporter.config().setDocumentTitle("Test Results");
-		System.out.println("This is testing");
+		//System.out.println("This is testing");
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("TesterName","TestingTeam");

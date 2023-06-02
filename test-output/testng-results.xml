@@ -1,86 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T13:05:14 IST" name="Suite" finished-at="2023-06-02T13:05:39 IST" duration-ms="25132">
+  <suite started-at="2023-06-02T15:23:45 IST" name="Suite" finished-at="2023-06-02T15:24:14 IST" duration-ms="28835">
     <groups>
     </groups>
-    <test started-at="2023-06-02T13:05:14 IST" name="Test" finished-at="2023-06-02T13:05:39 IST" duration-ms="25132">
-      <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@3abada5a]" started-at="2023-06-02T13:05:14 IST" name="OpenBrowser" finished-at="2023-06-02T13:05:18 IST" duration-ms="3756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@3abada5a]" started-at="2023-06-02T13:05:18 IST" name="Login" finished-at="2023-06-02T13:05:18 IST" duration-ms="375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@3abada5a]" started-at="2023-06-02T13:05:18 IST" name="test" finished-at="2023-06-02T13:05:39 IST" duration-ms="20958" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-=======
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2023-06-02T12:41:48 IST" name="Default suite" finished-at="2023-06-02T12:42:38 IST" duration-ms="50776">
-    <groups>
-    </groups>
-    <test started-at="2023-06-02T12:41:48 IST" name="Default test" finished-at="2023-06-02T12:42:38 IST" duration-ms="50776">
-      <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@54a7079e]" started-at="2023-06-02T12:41:48 IST" name="OpenBrowser" finished-at="2023-06-02T12:42:07 IST" duration-ms="19529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@54a7079e]" started-at="2023-06-02T12:42:07 IST" name="Login" finished-at="2023-06-02T12:42:07 IST" duration-ms="278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="getTaxAmount()[pri:0, instance:resources.TestScript@54a7079e]" started-at="2023-06-02T12:42:07 IST" name="getTaxAmount" finished-at="2023-06-02T12:42:17 IST" duration-ms="10105" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test started-at="2023-06-02T15:23:45 IST" name="Test" finished-at="2023-06-02T15:24:14 IST" duration-ms="28835">
+      <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
+        <test-method signature="retriveSuccessmessage()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage@77825085]" started-at="2023-06-02T15:24:14 IST" name="retriveSuccessmessage" finished-at="2023-06-02T15:24:14 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class,'summary_tax_label')]"}
-  (Session info: headless chrome=113.0.5672.129)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61234edee39c8fdfe56a8971622a3f73, findElement {using=xpath, value=//*[contains(@class,'summary_tax_label')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CHAITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51969}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51969/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61234edee39c8fdfe56a8971622a3f73]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@class,'summary_tax_label')]"}
-  (Session info: headless chrome=113.0.5672.129)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [61234edee39c8fdfe56a8971622a3f73, findElement {using=xpath, value=//*[contains(@class,'summary_tax_label')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\CHAITA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51969}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51969/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 61234edee39c8fdfe56a8971622a3f73
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
-at AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage.getTaxAmount(CheckoutOverviewpage.java:61)
-at resources.TestScript.getTaxAmount(TestScript.java:54)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage(CheckoutCompletepage.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,19 +48,24 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTaxAmount -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@54a7079e]" started-at="2023-06-02T12:42:17 IST" name="test" finished-at="2023-06-02T12:42:38 IST" duration-ms="20807" status="PASS">
+        </test-method> <!-- retriveSuccessmessage -->
+      </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage -->
+      <class name="resources.TestScript">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@1e461e41]" started-at="2023-06-02T15:23:45 IST" name="OpenBrowser" finished-at="2023-06-02T15:24:03 IST" duration-ms="17678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@1e461e41]" started-at="2023-06-02T15:24:03 IST" name="Login" finished-at="2023-06-02T15:24:03 IST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="test()[pri:0, instance:resources.TestScript@1e461e41]" started-at="2023-06-02T15:24:03 IST" name="test" finished-at="2023-06-02T15:24:14 IST" duration-ms="10773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@54a7079e]" started-at="2023-06-02T12:42:38 IST" name="closeBrowser" finished-at="2023-06-02T12:42:38 IST" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
->>>>>>> cddd0e0620dbe71da12a074cc5678f02ced753c8
       </class> <!-- resources.TestScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
