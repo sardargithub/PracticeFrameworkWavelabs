@@ -9,6 +9,14 @@
     <parameter name="lastName" value="sardar"/>
     <parameter name="zipCode" value="1234"/>
     <classes>
+      <class name="resources.TestScript">
+        <methods>
+          <include name="test"/>
+          <include name="Login"/>
+          <include name="closeBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- resources.TestScript -->
       <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage">
         <methods>
           <include name="retriveSuccessmessage"/>

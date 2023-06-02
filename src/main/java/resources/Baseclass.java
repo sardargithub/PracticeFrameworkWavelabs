@@ -61,10 +61,11 @@ public void OpenBrowser() throws EncryptedDocumentException, IOException
 	driver.get(Url);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
-private DesiredCapabilities DesiredCapabilities() {
-	// TODO Auto-generated method stub
-	return null;
-}
+
+/*
+ * private DesiredCapabilities DesiredCapabilities() { // TODO Auto-generated
+ * method stub return null; }
+ */
 @BeforeClass
 public void Login() throws EncryptedDocumentException, IOException
 {
@@ -82,12 +83,13 @@ public void Login() throws EncryptedDocumentException, IOException
  * @AfterTest public void closebrowser() { driver.close(); }
  */
 public String getScreenshot(String testCaseName) throws IOException {
+	System.out.println("Taking ScreenShot here");
 	TakesScreenshot ts =(TakesScreenshot)driver;
 	File source=ts.getScreenshotAs(OutputType.FILE);
 	File file = new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
 	FileUtils.copyFile(source,file);
 	return System.getProperty("user.dir")+"//reports//"+testCaseName+".png";
-}
+	}
 
 @AfterTest
 public void closeBrowser() {

@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-06-01T12:29:27Z" name="Suite" finished-at="2023-06-01T12:30:12Z" duration-ms="44990">
     <groups>
     </groups>
@@ -20,6 +21,26 @@
           </reporter-output>
         </test-method> <!-- test -->
         <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@16746061]" started-at="2023-06-01T18:00:12Z" name="closeBrowser" finished-at="2023-06-01T18:00:12Z" duration-ms="108" status="PASS">
+=======
+  <suite started-at="2023-06-02T05:43:40Z" name="Suite" finished-at="2023-06-02T05:44:05Z" duration-ms="25618">
+    <groups>
+    </groups>
+    <test started-at="2023-06-02T05:43:40Z" name="Test" finished-at="2023-06-02T05:44:05Z" duration-ms="25618">
+      <class name="resources.TestScript">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@25b2cfcb]" started-at="2023-06-02T11:13:40Z" name="OpenBrowser" finished-at="2023-06-02T11:13:44Z" duration-ms="4230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@25b2cfcb]" started-at="2023-06-02T11:13:44Z" name="Login" finished-at="2023-06-02T11:13:44Z" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="test()[pri:0, instance:resources.TestScript@25b2cfcb]" started-at="2023-06-02T11:13:44Z" name="test" finished-at="2023-06-02T11:14:05Z" duration-ms="21048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@25b2cfcb]" started-at="2023-06-02T11:14:05Z" name="closeBrowser" finished-at="2023-06-02T11:14:05Z" duration-ms="21" status="PASS">
+>>>>>>> d7e5e9603780fd1a7ec340e51e99a72505630cef
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
