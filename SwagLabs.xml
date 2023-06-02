@@ -10,7 +10,7 @@
   <parameter name="zipCode" value="1234"/>
     <classes>
       <class name="resources.TestScript"/>
-      <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage"/>
+     <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage"/> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
