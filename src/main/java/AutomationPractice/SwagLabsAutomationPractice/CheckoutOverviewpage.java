@@ -3,6 +3,7 @@ package AutomationPractice.SwagLabsAutomationPractice;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import resources.Baseclass;
 
@@ -54,7 +55,6 @@ public class CheckoutOverviewpage
 		String price=totalPrice.getText();
 		return price;
 	}
-	
 	public String getTaxAmount() {
 		String amount=taxAmount.getText();
 		return amount;

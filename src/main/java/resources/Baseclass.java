@@ -66,7 +66,7 @@ public void OpenBrowser() throws EncryptedDocumentException, IOException
  * private DesiredCapabilities DesiredCapabilities() { // TODO Auto-generated
  * method stub return null; }
  */
-@BeforeClass
+@BeforeClass()
 public void Login() throws EncryptedDocumentException, IOException
 {
 	String un=Exceloperation.readdata("Sheet1", 1, 2);
@@ -91,8 +91,10 @@ public String getScreenshot(String testCaseName) throws IOException {
 	return System.getProperty("user.dir")+"//reports//"+testCaseName+".png";
 	}
 
-@AfterTest
+@AfterTest(enabled=false)
 public void closeBrowser() {
+	System.out.println("browser close method");
 	driver.close();
+	
 }
 }
