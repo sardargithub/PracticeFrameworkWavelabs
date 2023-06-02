@@ -14,7 +14,7 @@ import resources.Exceloperation;
 
 public class CheckoutCompletepage 
 {
-	@FindBy(xpath = "//*[@class='complete-header']")
+	@FindBy(xpath = "//*[text()='Thank you for your order!']")
 	WebElement successMessage;
 
 	@FindBy(id = "back-to-products")
@@ -28,7 +28,7 @@ public class CheckoutCompletepage
 		backToHome.click();
 	}
 
-	
+
 	public void retriveSuccessmessage() throws EncryptedDocumentException, IOException {
 		String conformationmesage = successMessage.getText();
 		System.out.println(conformationmesage);

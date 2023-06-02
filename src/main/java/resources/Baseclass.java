@@ -34,7 +34,7 @@ public void OpenBrowser() throws EncryptedDocumentException, IOException
 	{
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-notifications","headless","--window-size=1366,768");
+		options.addArguments("--disable-notifications","headless","--window-size=1326,450");
 		options.addArguments("--allow-insecure-localhost");
 	    options.addArguments("--disable-gpu");
 	    options.addArguments("--no-sandbox");
@@ -61,10 +61,11 @@ public void OpenBrowser() throws EncryptedDocumentException, IOException
 	driver.get(Url);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 }
-private DesiredCapabilities DesiredCapabilities() {
-	// TODO Auto-generated method stub
-	return null;
-}
+
+/*
+ * private DesiredCapabilities DesiredCapabilities() { // TODO Auto-generated
+ * method stub return null; }
+ */
 @BeforeClass
 public void Login() throws EncryptedDocumentException, IOException
 {

@@ -8,7 +8,7 @@ import resources.Baseclass;
 
 public class YourCartpage
 {
-	@FindBy(id="checkout")
+	@FindBy(xpath="//*[text()='Checkout']")
 	WebElement checkOutbutton;
 	
 	@FindBy(id="continue-shopping")
