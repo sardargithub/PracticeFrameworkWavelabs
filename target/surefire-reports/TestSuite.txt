@@ -1,9 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 49.216 s <<< FAILURE! - in TestSuite
-resources.TestScript.test  Time elapsed: 21.04 s  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 39.883 s <<< FAILURE! - in TestSuite
+resources.TestScript.test  Time elapsed: 20.918 s  <<< FAILURE!
 java.lang.AssertionError: expected [Thank you for your order!] but found [Thank you for your]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
@@ -43,11 +42,7 @@ java.lang.AssertionError: expected [Thank you for your order!] but found [Thank 
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage  Time elapsed: 0.073 s  <<< FAILURE!
-=======
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.923 s <<< FAILURE! - in TestSuite
-AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage  Time elapsed: 0.095 s  <<< FAILURE!
->>>>>>> 7907bb98fbe9d7da260c0b71bc838addd0afa597
+AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage.retriveSuccessmessage  Time elapsed: 0.065 s  <<< FAILURE!
 java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
