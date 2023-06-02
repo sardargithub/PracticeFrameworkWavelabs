@@ -41,8 +41,9 @@ public class CheckoutOverviewpage
 		Cancelbutton.click();
 	}
 	
+	
 	public String getPaymentInformation() {
-		String paymentInfo=paymentInformation.getText();
+		String paymentInfo=paymentInformation.getText();		
 		return paymentInfo;
 	}
 	

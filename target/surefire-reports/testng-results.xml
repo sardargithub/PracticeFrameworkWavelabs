@@ -3,6 +3,7 @@
   <reporter-output>
   </reporter-output>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <suite started-at="2023-06-02T07:20:12Z" name="Suite" finished-at="2023-06-02T07:20:53Z" duration-ms="40768">
 =======
 <<<<<<< HEAD
@@ -57,6 +58,26 @@
 >>>>>>> d7e5e9603780fd1a7ec340e51e99a72505630cef
 >>>>>>> 457a4b139efc00a136ee057461e9b9a1fd620f30
 >>>>>>> 4107b72aa89c84583c2bf9beb0199bd055af047a
+=======
+  <suite started-at="2023-06-02T06:19:05Z" name="Suite" finished-at="2023-06-02T06:19:30Z" duration-ms="24683">
+    <groups>
+    </groups>
+    <test started-at="2023-06-02T06:19:05Z" name="Test" finished-at="2023-06-02T06:19:30Z" duration-ms="24683">
+      <class name="resources.TestScript">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@62e6b5c8]" started-at="2023-06-02T11:49:05Z" name="OpenBrowser" finished-at="2023-06-02T11:49:09Z" duration-ms="3522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@62e6b5c8]" started-at="2023-06-02T11:49:09Z" name="Login" finished-at="2023-06-02T11:49:09Z" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="test()[pri:0, instance:resources.TestScript@62e6b5c8]" started-at="2023-06-02T11:49:09Z" name="test" finished-at="2023-06-02T11:49:30Z" duration-ms="20838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:resources.TestScript@62e6b5c8]" started-at="2023-06-02T11:49:30Z" name="closeBrowser" finished-at="2023-06-02T11:49:30Z" duration-ms="20" status="PASS">
+>>>>>>> cddd0e0620dbe71da12a074cc5678f02ced753c8
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
