@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="resources.TestScript" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage" class="method navigator-link" hash-for-method="testMethod">testMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -117,6 +122,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethod">
+                  </a> <!-- testMethod -->
+                  <span class="method-name">testMethod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -158,7 +178,7 @@
       &lt;/class&gt; &lt;!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage --&gt;
       &lt;class name=&quot;AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;testMethod&quot;/&gt;
+          &lt;include name=&quot;testMethod&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage --&gt;
       &lt;class name=&quot;AutomationPractice.SwagLabsAutomationPractice.AddProductpage&quot;&gt;
@@ -205,11 +225,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'resources.TestScript')
-data.setCell(0, 3, 10771);
+data.setCell(0, 3, 10805);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMethod')
+data.setCell(1, 2, 'AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage')
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -233,16 +257,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage</span>
+              <span class="ignored-class-name">AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">retriveSuccessmessage</span>
+                <span class="ignored-method-name">getTAmount</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage</span>
+              <span class="ignored-class-name">AutomationPractice.SwagLabsAutomationPractice.CheckoutCompletepage</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testMethod</span>
+                <span class="ignored-method-name">retriveSuccessmessage</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -261,11 +285,18 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">Login</span>
-                <span class="method-start">3444 ms</span>
+                <span class="method-start">16797 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">3752 ms</span>
+                <span class="method-start">17107 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMethod</span>
+                <span class="method-start">27918 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

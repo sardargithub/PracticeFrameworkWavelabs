@@ -60,16 +60,22 @@ public class CheckoutOverviewpage
 		return price;
 	}
 	
-	@Test 
+	
 	public String getTaxAmount() {
 	String amount = taxAmount.getText();
-	System.out.println(amount);
+	//System.out.println(amount);
 	return amount;
 	}
 	 
 	@Test
 	public void testMethod() {
 		System.out.println("This method created for testing");
+	}
+	
+	@Test
+	public void getTAmount() {
+		String amount1 = taxAmount.getText();
+		System.out.println(amount1);
 	}
 	
 }

@@ -17,7 +17,7 @@
 	</class> 
 	<class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage" >
      	<methods>
-     		<exclude name="testMethod"/>
+     		<include name="testMethod"/>
      	</methods>
 	</class> 
 	<class name="AutomationPractice.SwagLabsAutomationPractice.AddProductpage" >

@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T09:56:07Z" name="Suite" finished-at="2023-06-02T09:56:21Z" duration-ms="14531">
+  <suite started-at="2023-06-02T12:00:08Z" name="Suite" finished-at="2023-06-02T12:00:36Z" duration-ms="27921">
     <groups>
     </groups>
-    <test started-at="2023-06-02T09:56:07Z" name="Test" finished-at="2023-06-02T09:56:21Z" duration-ms="14531">
+    <test started-at="2023-06-02T12:00:08Z" name="Test" finished-at="2023-06-02T12:00:36Z" duration-ms="27921">
       <class name="resources.TestScript">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@7a527389]" started-at="2023-06-02T15:26:07Z" name="OpenBrowser" finished-at="2023-06-02T15:26:10Z" duration-ms="3442" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:resources.TestScript@485a3466]" started-at="2023-06-02T17:30:08Z" name="OpenBrowser" finished-at="2023-06-02T17:30:25Z" duration-ms="16794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@7a527389]" started-at="2023-06-02T15:26:10Z" name="Login" finished-at="2023-06-02T15:26:10Z" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:resources.TestScript@485a3466]" started-at="2023-06-02T17:30:25Z" name="Login" finished-at="2023-06-02T17:30:25Z" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="test()[pri:0, instance:resources.TestScript@7a527389]" started-at="2023-06-02T15:26:10Z" name="test" finished-at="2023-06-02T15:26:21Z" duration-ms="10771" status="PASS">
+        <test-method signature="test()[pri:0, instance:resources.TestScript@485a3466]" started-at="2023-06-02T17:30:25Z" name="test" finished-at="2023-06-02T17:30:36Z" duration-ms="10805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
       </class> <!-- resources.TestScript -->
+      <class name="AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage">
+        <test-method signature="testMethod()[pri:0, instance:AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage@2b43529a]" started-at="2023-06-02T17:30:36Z" name="testMethod" finished-at="2023-06-02T17:30:36Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod -->
+      </class> <!-- AutomationPractice.SwagLabsAutomationPractice.CheckoutOverviewpage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
